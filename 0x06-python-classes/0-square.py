@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Square related feature module"""
+"""Square related feature module."""
 
 
 class Square:
-"""Class that define a square"""
+    """Class that define a square."""
     pass
