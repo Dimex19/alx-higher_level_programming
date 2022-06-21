@@ -3,33 +3,40 @@
 
 
 class Node:
+    """Class of the code"""
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
 
     @property
     def data(self):
+    """Method that returns self"""
         return self.__data
 
     @data.setter
     def data(self, value):
+    """Method that raises TypeError"""
         if not isinstance(value, int):
             raise TypeError("data must be an integer")
         self.__data = value
 
     @property
     def next_node(self):
+    """Method that moves to next node"""
         return self.__next_node
 
     @next_node.setter
     def next_node(self, value):
+    """Method that checks next node"""
         if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
 
 class SinglyLinkedList:
+"""Class of the code"""
     def __str__(self):
+    """Method that prints"""
         rtn = ""
         ptr = self.__head
 
@@ -42,9 +49,11 @@ class SinglyLinkedList:
         return rtn
 
     def __init__(self):
+    """Method that initialize"""
         self.__head = None
 
     def sorted_insert(self, value):
+    """Method that returns a value"""
         ptr = self.__head
 
         while ptr is not None:
