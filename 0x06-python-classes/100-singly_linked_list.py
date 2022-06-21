@@ -6,6 +6,7 @@ class Node:
     """ A class that defines a square by its size
     """
     def __init__(self, data, next_node=None):
+    """Method that initialize next node"""
         self.data = data
         self.next_node = next_node
 
